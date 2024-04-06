@@ -82,6 +82,30 @@ public class Main {
             System.out.println (freeSitPlaceAmount2+" свободных сидячих места");}
         if (occupiedStandPlaceAmount2 < standPlaceAmount2) {
             System.out.println (freeStandPlaceAmount2+" свободных стоячих места");
-        }
+        };
+        System.out.println("exercise 7");
+        int one = 45;
+        int tow = 36;
+        int three = 12;
+        if (one == tow && one == three){
+            System.out.println("Все три числа равны");}
+        if (one==tow && one > three){
+            System.out.println("первое число равно второму и это большее число");}
+        if (one==tow && one < three){
+            System.out.println("большее число - третье");}
+        if (one==three && one > tow){
+            System.out.println("первое число равно третьему и это большее число");}
+        if (one==three && one < tow){
+            System.out.println("большее число - второе");}
+        if (tow==three && tow > one){
+            System.out.println("второе число равно третьему и это большее число");}
+        if (tow==three && tow < one){
+            System.out.println("большее число - первое");}
+        if (one > tow && one > three) {
+            System.out.println("большее число - первое");}
+        if (tow > one && tow > three) {
+            System.out.println("большее число - второе");}
+        if (three > one && three > tow) {
+            System.out.println("большее число - третье");}
     }
 }
