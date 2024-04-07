@@ -43,17 +43,12 @@ public class Main {
                 "как заполнены все сидячие");
         int placeAmount1 = 102;
         int sitPlaceAmount1 = 60;
-        int occupiedPlaceAmount1 = 45;
-        int freePlaceAmount1 = placeAmount1 - occupiedPlaceAmount1;
-        if (occupiedPlaceAmount1 < placeAmount1) {
-            System.out.println ("В вагоне есть свободные места;");}
-        else {
-            System.out.println ("В вагоне свободных мест нет");};
+        int occupiedPlaceAmount1 = 71;
         if (occupiedPlaceAmount1 < sitPlaceAmount1){
-            System.out.println ("сидячие и стоячие");}
-        if (occupiedPlaceAmount1 >= sitPlaceAmount1 && occupiedPlaceAmount1 < placeAmount1) {
-            System.out.println ("стоячие");}
-
+            System.out.println ("В вагоне есть сидячие и стоячие места");}
+        else if (occupiedPlaceAmount1 < placeAmount1) {
+            System.out.println ("В вагоне есть стоячие места");}
+        else {System.out.println ("В вагоне нет свободных мест;");};
 
         System.out.println("Вариант 2: При условии, что стоячие места заполняются " +
                 "независимо от наличия свободных сидячих мест");
@@ -77,27 +72,14 @@ public class Main {
         };
         System.out.println("exercise 7");
         int one = 45;
-        int tow = 36;
-        int three = 12;
-        if (one == tow && one == three){
-            System.out.println("Все три числа равны");}
-        if (one==tow && one > three){
-            System.out.println("первое число равно второму и это большее число");}
-        if (one==tow && one < three){
-            System.out.println("большее число - третье");}
-        if (one==three && one > tow){
-            System.out.println("первое число равно третьему и это большее число");}
-        if (one==three && one < tow){
-            System.out.println("большее число - второе");}
-        if (tow==three && tow > one){
-            System.out.println("второе число равно третьему и это большее число");}
-        if (tow==three && tow < one){
-            System.out.println("большее число - первое");}
+        int tow = 16;
+        int three = 16;
         if (one > tow && one > three) {
             System.out.println("большее число - первое");}
-        if (tow > one && tow > three) {
+        else if (tow > one && tow > three) {
             System.out.println("большее число - второе");}
-        if (three > one && three > tow) {
+        else if (three > one && three > tow) {
             System.out.println("большее число - третье");}
+        else {System.out.println("Среди сравниаемых чисел есть равные числа");}
     }
 }
